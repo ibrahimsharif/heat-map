@@ -8,7 +8,7 @@ export default new Router({
   routes: [
     {
       path: '/Create',
-      name: 'HelloWorld',
+      name: 'Create',
       component: CreateAED,
     },
   ],
