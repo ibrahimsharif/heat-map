@@ -9,20 +9,21 @@
         clipped
         fixed
         v-model="drawer"
+        width="200"
         app
       >
         <v-list dense>
-          <v-list-tile v-on-click="{}">
+          <v-list-tile @click="$router.push({name:'about'})">
             <v-list-tile-action>
-              <v-icon>dashboard</v-icon>
+              <v-icon>info</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Dashboard</v-list-tile-title>
+              <v-list-tile-title >About the project</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile @click="$router.push({name:'create'})">
             <v-list-tile-action>
-              <v-icon>settings</v-icon>
+              <v-icon>place</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Place AED</v-list-tile-title>
@@ -30,7 +31,7 @@
           </v-list-tile>
           <v-list-tile @click="$router.push({name:'move'})">
             <v-list-tile-action>
-              <v-icon>settings</v-icon>
+              <v-icon>place</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Move AED</v-list-tile-title>
@@ -38,7 +39,7 @@
           </v-list-tile>
           <v-list-tile @click="$router.push({name:'optimize'})">
             <v-list-tile-action>
-              <v-icon>settings</v-icon>
+              <v-icon>assessment</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Optimize AED</v-list-tile-title>
@@ -47,21 +48,10 @@
         </v-list>
       </v-navigation-drawer>
       <v-toolbar app fixed clipped-left>
-        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <img class="logo" v-bind:src="'../../static/heart-with-pulse.png'" alt="hearth with a hearth pulse in it.">
         <v-toolbar-title>Hearth Map</v-toolbar-title>
       </v-toolbar>
-      <v-content>
-        <v-container fluid fill-height>
-          <v-layout justify-center align-center>
-            <v-flex shrink>
-              <router-view></router-view>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-content>
-      <v-footer app fixed>
-        <span>&copy; 2017</span>
-      </v-footer>
+      <router-view></router-view>
     </v-app>
   </div>
 </template>
@@ -70,10 +60,14 @@
 export default {
   name: 'App',
   data: () => ({
-    drawer: false,
+    drawer: true,
   }),
 };
 </script>
 
 <style>
+ .logo {
+   width: 64x;
+   height: 64px;
+ } 
 </style>
