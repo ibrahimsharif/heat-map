@@ -41,7 +41,7 @@
       </v-navigation-drawer>
       <v-toolbar app fixed clipped-left>
       <img class="logo" v-bind:src="'../../static/heart-with-pulse.png'" alt="hearth with a hearth pulse in it.">
-        <v-toolbar-title>Hearth Map</v-toolbar-title>
+        <v-toolbar-title>Heart Map</v-toolbar-title>
       </v-toolbar>
       <router-view></router-view>
     </v-app>
