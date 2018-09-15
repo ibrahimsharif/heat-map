@@ -1,15 +1,15 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import CreateAED from '@/components/Create-AED';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/Create',
       name: 'HelloWorld',
-      component: HelloWorld,
+      component: CreateAED,
     },
   ],
 });
