@@ -20,12 +20,28 @@
               <v-list-tile-title>Dashboard</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$router.push({name:'Create'})">
+          <v-list-tile @click="$router.push({name:'create'})">
             <v-list-tile-action>
               <v-icon>settings</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Place AED</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile @click="$router.push({name:'move'})">
+            <v-list-tile-action>
+              <v-icon>settings</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>Move AED</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile @click="$router.push({name:'optimize'})">
+            <v-list-tile-action>
+              <v-icon>settings</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>Optimize AED</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
