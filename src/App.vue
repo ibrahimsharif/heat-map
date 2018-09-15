@@ -9,7 +9,7 @@
         clipped
         fixed
         v-model="drawer"
-        width="200"
+        width="320"
         app
       >
         <v-list dense>
@@ -26,15 +26,7 @@
               <v-icon>place</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Place AED</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-          <v-list-tile @click="$router.push({name:'move'})">
-            <v-list-tile-action>
-              <v-icon>place</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>Move AED</v-list-tile-title>
+              <v-list-tile-title>Optimize existing AED locations</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile @click="$router.push({name:'optimize'})">
@@ -42,7 +34,7 @@
               <v-icon>assessment</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Optimize AED</v-list-tile-title>
+              <v-list-tile-title>Create AED locations from incidents</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>

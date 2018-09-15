@@ -5,34 +5,14 @@
           <v-layout row wrap justify-center>
             <v-flex xs12>              
               <iframe src="../../static/Incidentmap.html" seamless></iframe>
-
-
                 <v-layout row wrap>
-
-                    <v-flex xs12 sm2>
-
-                      <v-text-field
-                        v-model="latitude"
-                        label="Latitude - 55.675958"
-                        prepend-icon="place"
-                      ></v-text-field>
-                    </v-flex>
-                    <v-flex xs12 sm2>
-
-                      <v-text-field
-                        v-model="longtitude"
-                        label="Longtitude - 12.56516"
-                        prepend-icon="place"
-                      ></v-text-field>
-                    </v-flex>
-
+                  <v-flex xs12>
                     <v-btn
                     block
                     color="rgba(97, 96, 96, 0.28)"
-                    v-on:click="updateMapWithNewAED()">Place AED</v-btn>
+                    v-on:click="updateMapWithNewAED()">Create new AED locations using incident information</v-btn>
+                  </v-flex>
                 </v-layout>
-
-
             </v-flex>
           </v-layout>
       </section>
@@ -42,19 +22,11 @@
 
 <script>
 export default {
-  name: 'CreateAED',
-  data: function () {
-    return {
-      longtitude: "",
-      latitude: "",
-    }
-  },
+  name: 'OptimizeAED',
   methods: {
         updateMapWithNewAED: function() {
-          let latitude = this.latitude;
-          let longtitude = this.longtitude;
 
-          // DO AXIOS CALL
+          // Replace source for iframe.
         }
     }
 };
@@ -63,6 +35,6 @@ export default {
 <style scoped>
  iframe {
    width: 100%;
-   height: 800px;
+   height: 840px;
  }
 </style>

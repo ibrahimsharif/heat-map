@@ -2,13 +2,13 @@
  <v-content class="about">
      <div id="customHtml"> </div>
       <section>
-        <v-parallax src="../../static/Capture.PNG" height="600">
+        <v-parallax src="../../static/Capture2.PNG" height="600">
           <v-layout
             column
             align-center
-            class="red--text"
+            class="black--text"
           >
-            <h1 class="red--text mb-2 display-4 font-weight-bold text-xs-center">Hearth Map</h1>
+            <h1 class="black--text mb-2 display-4 font-weight-bold text-xs-center">Hearth Map</h1>
             <div class="mb-3 display-2 font-weight-bold text-xs-center">Hacking to save lives</div>
           </v-layout>
         </v-parallax>
@@ -32,50 +32,35 @@
           <v-flex xs12>
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
-                <v-flex xs12 md4>
+                <v-flex xs12 md6>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
                       <v-icon x-large class="blue--text text--lighten-2">place</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Place an AED in the world</div>
+                      <div class="headline text-xs-center">Optimize your city's AED placement</div>
                     </v-card-title>
                     <v-card-text>
-                      Try our new feature to place a new AED on the map.
-                      See how the response times will change after the new AED is added to the map.
-                      Use this tool to plan out your own optimal solution to AED placement.
-                      Challenge your friends to beat you!
+                      Use our software to optimize the locations of new AED's in your city.
+                      If your city already have an existing network of AED's we can help you improve it even further.
+                      We help you with suggestions to new locations, based on data from existing AED locations and locations of incidents in your city.
+                      The software focus on areas with high response times, so the chance of survival until the ambulance arrives increases.
                     </v-card-text>
                   </v-card>
                 </v-flex>
-                <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
-                    <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">place</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Move an existing AED</div>
-                    </v-card-title>
-                    <v-card-text>
-                      If you identify an existing AED, but believe that it could be placed in a more optimal location,
-                      then try out our 'Move an existing AED' feature.
-                      This will visually and instantly tell you if the new location is better.
-                      <div> &nbsp; </div>
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex xs12 md4>
+                <v-flex xs12 md6>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
                       <v-icon x-large class="blue--text text--lighten-2">assessment</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Optimize placements of AED's</div>
+                      <div class="headline text-xs-center">Create suggestions for new AED locations</div>
                     </v-card-title>
                     <v-card-text>
-                      If you want to optimize the placement of AED's but don't have the time to do it?
-                      Try out our data-analysis powered soloution which helps you identify new AED placements in order to reduce the response time.
-                      Let us help you optimze AED placement in your city!
+                      If your city does not have an existing network of AED's we will help you build one.
+                      Use our software to place the new AED's in locations where incident numbers are high.
+                      We collaporate with you and using your city's incident data, we can improve survival rate.
+                      The software focus on areas with high response times, so the chance of survival until the ambulance arrives increases.
                       <div> &nbsp; </div>
                     </v-card-text>
                   </v-card>
@@ -88,7 +73,7 @@
 
       <section>
         <v-container grid-list-xl>
-          <v-layout row wrap justify-center class="my-5">
+          <v-layout row wrap justify-center>
             <v-flex xs8>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
@@ -96,9 +81,9 @@
                 </v-card-title>
                 <v-card-text>
                   This project was created during the EMS Heart Hack: Hack to save lives. <br>
-                  We have developed a solution which utilizes the power of data-analysis to let the user easily and interactively change the future of AED's. <br>
-                  This enables the everyday person to help saving lives of people suffering from heart attacks. <br>
-                  Using data-anaylsis we have taken data from incidents of heart attacks and joined them with data from the HjerteLøber App by TrygFonden, to create a interactive color coded map which visually let's you identify areas of interest.
+                  We have developed a solution which utilizes the power of data-analysis to easily let people in charge of AED networks optimize their placement <br>
+                  We have focused on both cities with existing AED networks, and cities without an existing network.
+                  This will allow our software to help the future cities to become even more save, and help save the lives of people suffering from heart attacks. <br>
                 </v-card-text>
               </v-card>
             </v-flex>
