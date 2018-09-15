@@ -29,7 +29,7 @@
                     <v-btn
                     block
                     color="rgba(97, 96, 96, 0.28)"
-                    v-on:click="updateMapWithNewAED()"> TEST </v-btn>
+                    v-on:click="updateMapWithNewAED()">Place AED</v-btn>
                 </v-layout>
 
 
@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'CreateAED',
   data: function () {
     return {
       longtitude: "",
