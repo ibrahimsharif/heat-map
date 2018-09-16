@@ -7,10 +7,14 @@
               <iframe :src="iframeUrl" seamless></iframe>
                 <v-layout row wrap>
                   <v-flex xs12>
-                    <v-btn
+                    <v-btn v-if="showFullMap"
+                    block
+                    color="rgba(97, 96, 96, 0.28)"  
+                    v-on:click="updateMapWithNewAED()">Create new AED locations using incident information</v-btn>
+                     <v-btn v-else
                     block
                     color="rgba(97, 96, 96, 0.28)"
-                    v-on:click="updateMapWithNewAED()">Create new AED locations using incident information</v-btn>
+                    v-on:click="updateMapWithNewAED()">Show map of incidents</v-btn>
                   </v-flex>
                 </v-layout>
             </v-flex>
@@ -22,17 +26,22 @@
 
 <script>
 export default {
-  name: 'OptimizeAED',
+  name: 'CreateAED',
   data: function () {
       return {
-        iframeUrl: "../../static/OverallMap.html"
+        iframeUrl: "../../static/Incidentmap.html",
+        showFullMap: true
       }
     },
   methods: {
         updateMapWithNewAED: function() {
-          debugger;
-          this.iframeUrl = "../../static/NewAEDs.html";
-          // Replace source for iframe.
+
+          if (this.showFullMap) {
+              this.iframeUrl = "../../static/NewNewAEDMap.html";
+          } else {
+              this.iframeUrl = "../../static/Incidentmap.html";
+          }
+          this.showFullMap = !this.showFullMap;
         }
     }
 };
