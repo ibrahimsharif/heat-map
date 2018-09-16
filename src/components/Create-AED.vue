@@ -4,7 +4,7 @@
       <section>
           <v-layout row wrap justify-center>
             <v-flex xs12>              
-              <iframe src="../../static/Incidentmap.html" seamless></iframe>
+              <iframe :src="iframeUrl" seamless></iframe>
                 <v-layout row wrap>
                   <v-flex xs12>
                     <v-btn
@@ -23,9 +23,15 @@
 <script>
 export default {
   name: 'OptimizeAED',
+  data: function () {
+      return {
+        iframeUrl: "../../static/OverallMap.html"
+      }
+    },
   methods: {
         updateMapWithNewAED: function() {
-
+          debugger;
+          this.iframeUrl = "../../static/NewAEDs.html";
           // Replace source for iframe.
         }
     }

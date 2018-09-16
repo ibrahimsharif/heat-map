@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_8fff9f83a25641b583b6de43287d4e4e {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_8fff9f83a25641b583b6de43287d4e4e" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_8fff9f83a25641b583b6de43287d4e4e = L.map(
+        'map_8fff9f83a25641b583b6de43287d4e4e', {
+        center: [55.675958, 12.56516],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_29edeedefe7047e685d3e7ca3f6fdec5 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+    
+        var marker_7c9aadd93e344a18ab14cd60a342c339 = L.marker(
+            [56.066644, 12.468877],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_d854d2f7f4c24edfb84efed058d1869d = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_7c9aadd93e344a18ab14cd60a342c339.setIcon(custom_icon_d854d2f7f4c24edfb84efed058d1869d);
+            
+    
+        var marker_91518ba27291456f84f70c6c10fdb2e2 = L.marker(
+            [55.05301, 15.06011],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_9215ac9d8a0b4d0d8c33959eb0978e31 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_91518ba27291456f84f70c6c10fdb2e2.setIcon(custom_icon_9215ac9d8a0b4d0d8c33959eb0978e31);
+            
+    
+        var marker_d67a24b05a584e4c87d5b5dad6eb650c = L.marker(
+            [55.862642, 12.097073],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_d0c5c77d716a40a691c8f742f1b52929 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d67a24b05a584e4c87d5b5dad6eb650c.setIcon(custom_icon_d0c5c77d716a40a691c8f742f1b52929);
+            
+    
+        var marker_8b23eb4d1dae40fab0063316b6bb5f45 = L.marker(
+            [55.77232, 12.0898],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_08ffe9e7cacb48e8bcf53a447bc7e188 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_8b23eb4d1dae40fab0063316b6bb5f45.setIcon(custom_icon_08ffe9e7cacb48e8bcf53a447bc7e188);
+            
+    
+        var marker_0cea500d8b9e4b069a877331d91b80ae = L.marker(
+            [55.839856, 11.968796],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_c4bcdb0e1e0f48ad8feb55815e9db188 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_0cea500d8b9e4b069a877331d91b80ae.setIcon(custom_icon_c4bcdb0e1e0f48ad8feb55815e9db188);
+            
+    
+        var marker_5674da513cf544c8a7b9f5bea997f359 = L.marker(
+            [55.186714, 14.782475],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_d257ea3fde33490eacca81a172364e4a = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_5674da513cf544c8a7b9f5bea997f359.setIcon(custom_icon_d257ea3fde33490eacca81a172364e4a);
+            
+    
+        var marker_76630824a2a8489b9022d062fa0bf3a6 = L.marker(
+            [55.813038, 12.037198],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_6240e02e192743e6849441705fe10cb0 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_76630824a2a8489b9022d062fa0bf3a6.setIcon(custom_icon_6240e02e192743e6849441705fe10cb0);
+            
+    
+        var marker_057c9aaaed814effba8a5328d02600f2 = L.marker(
+            [56.070438, 12.386033],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_29e0cf0f44f54356aa45c9828d9fa837 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_057c9aaaed814effba8a5328d02600f2.setIcon(custom_icon_29e0cf0f44f54356aa45c9828d9fa837);
+            
+    
+        var marker_f5978e42ce844615a860f7b8c1ae93c5 = L.marker(
+            [55.255473, 14.762263],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_cf2df3b9642a42e7833c9b42f27156ad = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_f5978e42ce844615a860f7b8c1ae93c5.setIcon(custom_icon_cf2df3b9642a42e7833c9b42f27156ad);
+            
+    
+        var marker_9616a8269a09434480450654aa97c4f8 = L.marker(
+            [55.984778, 12.459369],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_11e9903cc368425e804dac9da88faa87 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_9616a8269a09434480450654aa97c4f8.setIcon(custom_icon_11e9903cc368425e804dac9da88faa87);
+            
+    
+        var marker_9abcbebb081d47e7a0843ffaa65686df = L.marker(
+            [55.74166, 12.09866],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_7691f4d5f9bc4bb68a89f2829618359e = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_9abcbebb081d47e7a0843ffaa65686df.setIcon(custom_icon_7691f4d5f9bc4bb68a89f2829618359e);
+            
+    
+        var marker_d05d0c9477604a92862af768d979df64 = L.marker(
+            [56.113486, 12.247616],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_a70a28b1e2554262b4436f88df9a6d47 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d05d0c9477604a92862af768d979df64.setIcon(custom_icon_a70a28b1e2554262b4436f88df9a6d47);
+            
+    
+        var marker_86674c715b7d408bb453e4c66e31d255 = L.marker(
+            [55.99516, 12.26812],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_8c58871cbd68449dba1cf860e2a89f0b = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_86674c715b7d408bb453e4c66e31d255.setIcon(custom_icon_8c58871cbd68449dba1cf860e2a89f0b);
+            
+    
+        var marker_18041bc8409944b49561bf78d326f34e = L.marker(
+            [56.030849, 12.305088],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_5ccbf1bb1dae49d0b9ba5ac0e14305ce = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_18041bc8409944b49561bf78d326f34e.setIcon(custom_icon_5ccbf1bb1dae49d0b9ba5ac0e14305ce);
+            
+    
+        var marker_9148efd5664342898f21da0f68166ce5 = L.marker(
+            [55.982973, 11.876342],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_df96f1a587c4445292d938b9fcb239b5 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_9148efd5664342898f21da0f68166ce5.setIcon(custom_icon_df96f1a587c4445292d938b9fcb239b5);
+            
+    
+        var marker_ef4fd7e9d5fd44a59ed03ef39e5a6ab1 = L.marker(
+            [56.095367, 12.410462],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_f9bad63182a748dbb523db46fca08129 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_ef4fd7e9d5fd44a59ed03ef39e5a6ab1.setIcon(custom_icon_f9bad63182a748dbb523db46fca08129);
+            
+    
+        var marker_d4d2a0148f404554b2e328c26c04119c = L.marker(
+            [56.023567, 12.518642],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_f6d786304c38499fa7acfbab91678997 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d4d2a0148f404554b2e328c26c04119c.setIcon(custom_icon_f6d786304c38499fa7acfbab91678997);
+            
+    
+        var marker_e5ac03a8fa7e4be59a27f565caa8932e = L.marker(
+            [55.7062, 12.3218],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_81502003c5164b0188cfde05a0866900 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_e5ac03a8fa7e4be59a27f565caa8932e.setIcon(custom_icon_81502003c5164b0188cfde05a0866900);
+            
+    
+        var marker_7f6462da44294ac5833fdfdab7f527d7 = L.marker(
+            [55.23325, 14.8777],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_420909f42027497da5f61191e205b2e4 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_7f6462da44294ac5833fdfdab7f527d7.setIcon(custom_icon_420909f42027497da5f61191e205b2e4);
+            
+    
+        var marker_7a60222ca7f04a3188c48db8de91d99a = L.marker(
+            [56.122293, 12.28737],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_57aada0bc282430982059966ec92b407 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_7a60222ca7f04a3188c48db8de91d99a.setIcon(custom_icon_57aada0bc282430982059966ec92b407);
+            
+    
+        var marker_d0b97707ef1645fa86445311db3596a1 = L.marker(
+            [55.821275, 12.201738],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_8b0873f8421b4d01baab679bb1b413dd = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d0b97707ef1645fa86445311db3596a1.setIcon(custom_icon_8b0873f8421b4d01baab679bb1b413dd);
+            
+    
+        var marker_d1a6594403184491b7e208232723b64a = L.marker(
+            [55.893179, 12.056313],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_54efd42fa7e1471db2ab2ed7b4099e30 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d1a6594403184491b7e208232723b64a.setIcon(custom_icon_54efd42fa7e1471db2ab2ed7b4099e30);
+            
+    
+        var marker_0bd4f22453e34d8e8a5e8ef0936e26f2 = L.marker(
+            [55.696626, 12.357128],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_885ea0d94c1c48efb3ece1d81f0aaf58 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_0bd4f22453e34d8e8a5e8ef0936e26f2.setIcon(custom_icon_885ea0d94c1c48efb3ece1d81f0aaf58);
+            
+    
+        var marker_aba9d28719314b75a2de66557997c97c = L.marker(
+            [55.935606, 12.116159],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_edd6c6a9e7794251a5e80821dc78c547 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_aba9d28719314b75a2de66557997c97c.setIcon(custom_icon_edd6c6a9e7794251a5e80821dc78c547);
+            
+    
+        var marker_9abf66991461496e974c7ad0dee8d27f = L.marker(
+            [55.86267, 12.251678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_a2a2bf1381aa4167860ad080d5f7a435 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_9abf66991461496e974c7ad0dee8d27f.setIcon(custom_icon_a2a2bf1381aa4167860ad080d5f7a435);
+            
+    
+        var marker_07bd9d4df0354b45845349b13aadd510 = L.marker(
+            [55.797805, 11.978174],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_50ba350cdbbc479dbdd817b15ca587bc = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_07bd9d4df0354b45845349b13aadd510.setIcon(custom_icon_50ba350cdbbc479dbdd817b15ca587bc);
+            
+    
+        var marker_7cd56a62b65c4378aa6e48e80cd5f050 = L.marker(
+            [55.852157, 12.365856],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_f64c792424cb4236924e223d86d7eed1 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_7cd56a62b65c4378aa6e48e80cd5f050.setIcon(custom_icon_f64c792424cb4236924e223d86d7eed1);
+            
+    
+        var marker_f6a84312b2b34fdfa782a6c6036fc0b1 = L.marker(
+            [55.685287, 12.219032],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8fff9f83a25641b583b6de43287d4e4e);
+        
+    
+
+                var custom_icon_da27245a144443899ec2eaf261c2ba08 = L.icon({
+                    iconUrl: 'AEDBLACK.png',
+                    iconSize: [20,20],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_f6a84312b2b34fdfa782a6c6036fc0b1.setIcon(custom_icon_da27245a144443899ec2eaf261c2ba08);
+            
+</script>
