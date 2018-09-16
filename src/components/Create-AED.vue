@@ -21,6 +21,11 @@
           </v-layout>
       </section>
     </v-content>
+
+
+
+
+
   </div>
 </template>
 
@@ -30,7 +35,7 @@ export default {
   data: function () {
       return {
         iframeUrl: "../../static/Incidentmap.html",
-        showFullMap: true
+        showFullMap: true,
       }
     },
   methods: {
