@@ -14,7 +14,15 @@
                     <v-btn v-else
                     block
                     color="rgba(97, 96, 96, 0.28)"
-                    v-on:click="updateMapWithNewAED()">Show map of incidents and AED's</v-btn>
+                    v-on:click="optimizeMapWithNewAED()">Show map of incidents and AED's</v-btn>
+                  </v-flex>
+                </v-layout>
+                <v-layout row wrap>
+                  <v-flex xs12>
+                    <v-btn v-if="showHeatMap"
+                    block
+                    color="rgba(97, 96, 96, 0.28)"
+                    v-on:click="showHeatmap()">Show heatmap of existing AED's and optimized AED locations</v-btn>
                   </v-flex>
                 </v-layout>
             </v-flex>
@@ -30,7 +38,8 @@ export default {
   data: function () {
       return {
         iframeUrl: "../../static/OverallMap.html",
-        showFullMap: true
+        showFullMap: true,
+        showHeatMap: false,
       }
     },
   methods: {
@@ -38,10 +47,16 @@ export default {
 
           if (this.showFullMap) {
               this.iframeUrl = "../../static/NewAEDs.html";
+              this.showHeatMap = true;
           } else {
               this.iframeUrl = "../../static/OverallMap.html";
+              this.showHeatMap = false;
           }
           this.showFullMap = !this.showFullMap;
+        },
+        showHeatmap: function() {
+          this.iframeUrl = "../../static/HeatMapVsNewAED.html"
+          this.showHeatMap = false;
         }
     }
 };
@@ -50,6 +65,6 @@ export default {
 <style scoped>
  iframe {
    width: 100%;
-   height: 840px;
+   height: 800px;
  }
 </style>
