@@ -21,12 +21,12 @@
               <v-list-tile-title >About the project</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$router.push({name:'create'})">
+          <v-list-tile @click="$router.push({name:'heatmap'})">
             <v-list-tile-action>
-              <v-icon>place</v-icon>
+              <v-icon>not_listed_location</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Create AED locations from incidents</v-list-tile-title>
+              <v-list-tile-title>Heatmap information</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile @click="$router.push({name:'optimize'})">
@@ -37,12 +37,12 @@
               <v-list-tile-title>Optimize existing AED locations</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$router.push({name:'heatmap'})">
+          <v-list-tile @click="$router.push({name:'create'})">
             <v-list-tile-action>
-              <v-icon>not_listed_location</v-icon>
+              <v-icon>place</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Heatmap information</v-list-tile-title>
+              <v-list-tile-title>Create AED locations from incidents</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
