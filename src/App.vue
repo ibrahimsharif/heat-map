@@ -37,6 +37,14 @@
               <v-list-tile-title>Optimize existing AED locations</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
+          <v-list-tile @click="$router.push({name:'heatmap'})">
+            <v-list-tile-action>
+              <v-icon>not_listed_location</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>Heatmap information</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
         </v-list>
       </v-navigation-drawer>
       <v-toolbar app fixed clipped-left>
