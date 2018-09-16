@@ -26,7 +26,7 @@
               <v-icon>place</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Optimize existing AED locations</v-list-tile-title>
+              <v-list-tile-title>Create AED locations from incidents</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile @click="$router.push({name:'optimize'})">
@@ -34,7 +34,7 @@
               <v-icon>assessment</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Create AED locations from incidents</v-list-tile-title>
+              <v-list-tile-title>Optimize existing AED locations</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
