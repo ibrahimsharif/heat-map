@@ -8,7 +8,7 @@
             align-center
             class="black--text"
           >
-            <h1 class="black--text mb-2 display-4 font-weight-bold text-xs-center">Hearth Map</h1>
+            <h1 class="black--text mb-2 display-4 font-weight-bold text-xs-center">Heart Map</h1>
             <div class="mb-3 display-2 font-weight-bold text-xs-center">Hacking to save lives</div>
           </v-layout>
         </v-parallax>
